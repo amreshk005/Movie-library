@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <title>Document</title>
+    <style>
+      #search {
+        /* width: ; */
+        box-shadow: 2px 3px 3px 3px rgb(238, 241, 245);
+        border-radius: 20px;
+        border: none;
+        outline: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid p-0" id="container" style="height: 100vh;">
+      <!-- Image and text -->
+      <nav class="navbar navbar-light" style="height: 10vh; background-color: rgba(3, 37, 65);">
+        <a class="navbar-brand text-light" href="#">
+          <img src="/docs/4.0/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top text-light" alt="" />
+          Movie Search
+        </a>
+      </nav>
+      <div class="row justify-content-center mt-3" style="height: 5vh;">
+        <!-- <label class="search">Search: </label> -->
+        <input class="col-6" type="text" placeholder="Enter the movie name" id="search" />
+      </div>
+      <div id="result" class="row justify-content-center align-items-center pt-5 pb-5" style="height: 75vh;">
+        <p>Please Enter Movie Name 🔖</p>
+      </div>
+      <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center" id="pagination"></ul>
+      </nav>
+    </div>
+  </body>
+  <script src="./index.js"></script>
+</html>
