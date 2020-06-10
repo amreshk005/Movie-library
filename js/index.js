@@ -7,7 +7,8 @@ let select;
 function getData(searchItem) {
   activePage = 1;
   var apikey = "77779f17";
-  var data = fetch(`http://www.omdbapi.com/?apikey=${apikey}&s=${searchItem}`)
+  var anywhere = "https://cors-anywhere.herokuapp.com/";
+  var data = fetch(`${anywhere}http://www.omdbapi.com/?apikey=${apikey}&s=${searchItem}`)
     .then((res) => res.json())
     .then((res) => {
       console.log("res", res);
